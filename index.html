@@ -180,17 +180,11 @@
       background: #66ccff;
       color: #000;
     }
+
     @media (max-width: 768px) {
-      header .container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav a {
-        display: block;
-        margin: 0.5rem 0 0 0;
-      }
       .hero-container {
         flex-direction: column;
+        text-align: center;
       }
       .hero-text h2 {
         font-size: 2rem;
@@ -198,20 +192,168 @@
       .hero-text p {
         font-size: 1rem;
       }
+      header .container {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.5rem 0;
+        display: block;
+      }
       section {
-        padding: 2rem 1rem;
+        padding: 2rem 2%;
+      }
+      .project-details {
+        padding: 1rem;
       }
       .btn-download {
         width: 100%;
         text-align: center;
       }
-      .socials a span {
-        display: none;
-      }
     }
   </style>
 </head>
 <body>
-  <!-- The rest of your body content remains unchanged -->
+  <header>
+    <div class="container">
+      <h1>Amor Ramadani</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#cv">CV</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h2>Hello! I'm Amor.</h2>
+        <p>
+I'm a third-year student of Journalism and Communication with hands-on experience in market research, promotion, and social media content creation.
+        </p>
+        <p>You're in the right place to learn more about me and my work.</p>
+      </div>
+      <div class="hero-image">
+        <img src="your-photo.jpg" alt="Amor Ramadani" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <br>
+    <p>I enjoy meeting new people, I am communicative and I like to accept new challenges. I want to improve my skills. At the same time, ambitious, dedicated and responsible in carrying out duties with problem solving methods and the ability to work effectively in a team environment.
+</p>
+<br>
+<p> I’ve always been the youngest member of the team. I know I don’t have much experience yet and I’m probably not fully ready — but I’d still love the opportunity to meet you. :)
+  </p>
+  <br>
+  
+  </section>
+
+  <section id="cv" data-aos="fade-left">
+    <h2>Curriculum Vitae (CV)</h2>
+    <br>
+    <p>Download my latest CV to learn more about my education and work experience.</p>
+    <a class="btn-download" href="cv.pdf" target="_blank"><i class="fas fa-download"></i> View / Download CV</a>
+  </section>
+
+  <section id="projects" data-aos="zoom-in">
+    <h2>Projects</h2>
+    <br>
+    <div class="project-card" onclick="toggleDetails('details2025')">
+      <h3>PR Days 2025</h3>
+            <p>Associate with PR Team of Faculty of Political Science</p>
+      <p>Click for details</p>
+    </div>
+    <div id="details2025" class="project-details">
+      <h4>PR Days 2025 - Ahead of Time</h4> 
+      <br>
+      <p>Seminar "PR Days 2025: Ahead of Time" focused on the future of communication, exploring neuromarketing, influencer responsibility, branding in the experience economy, and the evolving relationship between media, sports, and politics. Through program, seminar opened a dialogue on the directions in which PR, media, and society are heading.
+      </p>
+          <br>
+<p>Among the distinguished speakers were influencer Marta Lović, Veselin Vladimir Zvekić, Mara Ognjenović, AI and neuromarketing expert Nikola Učur, luxury branding strategist Ivana Laković, LoveFest marketing lead Adrijana Corelj, and political analysts Prof. Dr. Miloš Bešić and Slobodan Georgiev. International experts Gordan Turković and Petar Tanta from CTA komunikacije also returned, delivering another dynamic session on the importance of creative courage and time in PR.
+</p>
+      <br>
+The 14th edition of PR Days was held on May 16 and 17, 2025, at the Faculty of Political Science, supported by "Zdravo dvadesete" platform, with contributions from over 15 partner brands and organizations.</p>
+    <br> 
+     <video id="video2025" width="100%">
+        <source src="video2025.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="project-card" onclick="toggleDetails('details2024')">
+      <h3>PR Days 2024</h3>
+            <p>Associate with PR Team of Faculty of Political Science</p>
+      <p>Click for details</p>
+    </div>
+    <div id="details2024" class="project-details">
+      <h4>PR Days 2024 - Start the Story</h4>
+      <br>
+      <p>Seminar "PR Days 2024: Start the Story" dealt with communication strategy in the modern digital environment, exploring various aspects of marketing campaigns, the use of social networks, internal and external communication, as well as the application of artificial intelligence in marketing strategies.
+</p>
+<br>
+<p>Seminar brought together some of the well-known names of the domestic and Adria regional PR and marketing scene: consultant and founder of the TopIC platform Tijana Bejatović, communications director of the Nordeus Foundation Marija Beslać, PR expert Marko Nikolovski and PR manager of the Partizan Basketball Club and the Serbian men's A basketball team Ivan Ivković, marketing educator Vera Stevanović and AI educator Miloš Stevanović from Ludus Academy, Account Director Nikola Dragić and Senior Copywriter Vanja Bahilj from the advertising agency Ovation BBDO, Petar Tanta and Gordan Turković from agency CTA Communications from Zagreb, Assoc. Prof. Dr. Nikola Jović from the Faculty of Political Science and political marketing expert Aleksandar Belevski from North Macedonia.
+</p>
+<br>
+<p>PR Days 2024 was held on May 16 and 17, 2024 at the Faculty of Political Science.
+</p>
+<br>
+      <video id="video2024" width="100%">
+        <source src="video2024.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Every new connection, piece of career advice, or chance to grow means a lot to me.
+  </p>
+  
+  <p> Let's stay in touch: </p>
+<br>
+    <p>
+      <i class="fas fa-envelope" style="font-size:1.3rem; color:#1e1e2f; vertical-align:middle; margin-right:10px;"></i>
+      Email: <a href="mailto:ramadaniamor04@gmail.com">ramadaniamor04@gmail.com</a>
+    </p>
+    
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/ramadaniamor" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+      <i class="fab fa-linkedin"></i>
+      <span style="margin-left: 15px; font-size: 1rem; vertical-align: middle;">LinkedIn: @ramadaniamor</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Thank you for visiting.</p>
+    <p style="font-size: 0.75em; margin-top: 0.3em;">Amor Ramadani | Last Updated: May 30, 2025.</p>
+  </footer>
+
+  <div id="topArrow" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    function toggleDetails(id) {
+      const section = document.getElementById(id);
+      const video = section.querySelector('video');
+
+      if (!section.classList.contains('active')) {
+        section.classList.add('active');
+        video.currentTime = 0;
+        video.play();
+      } else {
+        video.pause();
+        section.classList.remove('active');
+      }
+    }
+  </script>
 </body>
 </html>
