@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,21 +143,6 @@
       max-height: 1000px;
       opacity: 1;
     }
-    .video-responsive {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .video-responsive video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
     #contact p {
       margin: 0.5rem 0;
     }
@@ -195,6 +181,7 @@
       background: #66ccff;
       color: #000;
     }
+
     @media (max-width: 768px) {
       .hero-container {
         flex-direction: column;
@@ -227,7 +214,6 @@
   </style>
 </head>
 <body>
- <body>
   <header>
     <div class="container">
       <h1>Amor Ramadani</h1>
@@ -298,20 +284,12 @@ Currently, I am a student in the third year of bachelor studies at the Faculty o
       <br>
 The 14th edition of PR Days was held on May 16 and 17, 2025, at the Faculty of Political Science, supported by "Zdravo dvadesete" platform, with contributions from over 15 partner brands and organizations.</p>
     <br> 
-
-  <!-- PR Days 2025 Video Block -->
-  <div id="details2025" class="project-details">
-    <h4>PR Days 2025 - Ahead of Time</h4> 
-    <br>
-    <p>...content...</p>
-    <br>
-    <div class="video-responsive">
-      <video id="video2025" playsinline controls>
+     <video id="video2025" width="100%">
         <source src="video2025.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-  </div>
+
     <div class="project-card" onclick="toggleDetails('details2024')">
       <h3>PR Days 2024</h3>
             <p>Associate with PR Team of Faculty of Political Science</p>
@@ -329,19 +307,12 @@ The 14th edition of PR Days was held on May 16 and 17, 2025, at the Faculty of P
 <p>PR Days 2024 was held on May 16 and 17, 2024 at the Faculty of Political Science.
 </p>
 <br>
-  <!-- PR Days 2024 Video Block -->
-  <div id="details2024" class="project-details">
-    <h4>PR Days 2024 - Start the Story</h4>
-    <br>
-    <p>...content...</p>
-    <br>
-    <div class="video-responsive">
-      <video id="video2024" playsinline controls>
+      <video id="video2024" width="100%">
         <source src="video2024.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-  </div>
+  </section>
 
   <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
